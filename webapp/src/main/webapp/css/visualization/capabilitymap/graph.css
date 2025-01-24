@@ -68,7 +68,6 @@ body {
 #left-container,
 #right-container,
 #center-container {
-    /* height:600px; */
     position:absolute;
     top:0;
 }
