@@ -88,12 +88,6 @@ h5 {
 /* ------------------------------------------------->  */
 
 
-/* @media (min-width: 1400px) {
-    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 970px;
-    }
-} */
-
 @media (min-width: 970px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
         max-width: 970px;
@@ -113,10 +107,6 @@ h5 {
     padding-right: 0;
 }
 
-/* .row {
-    margin-left: 0;
-    margin-right: 0;;
-} */
 
 * {
     box-sizing: border-box;
@@ -374,14 +364,6 @@ a.return:active {
     font-size: inherit;
     font-family: inherit;
 }
-/* .row, .rowvert {
-    background-color: #f7f9f9;
-    color: #5F6464;
-    font-size: 10pt;
-    font-style: normal;
-    text-align: left;
-    line-height: 2em;
-} */
 .rowalternate {
     background-color: #fff;
     color: #5F6464;
@@ -398,7 +380,6 @@ a.return:active {
     background-color: #fff;
 }
 .formsEdit p {
-    /*padding-top: 1em;*/
     margin-bottom: 1em;
     padding-bottom: 0;
     margin-top: 0;
@@ -589,12 +570,10 @@ ul#header-nav a.log-out {
     width: 100%;
     margin-top: 25px;
     position: absolute;
-    /* width: 396px; */
     max-width: 393px;
     height: 38px;
     top: 40px;
     right: 0;
-    /* padding-top: 5px; */
     padding: 5px 10px 0px;
 }
 
@@ -606,7 +585,6 @@ ul#header-nav a.log-out {
 }
 
 #search-field {
-    /* width: 396px; */
     display: flex;
     height: 38px;
     background: url(../images/search-interior-pages.png) 0 0 no-repeat;
@@ -624,7 +602,6 @@ ul#header-nav a.log-out {
 }
 input.search-vivo {
     float: left;
-    /* width: 290px; */
     width: 100%;
     height: 25px;
     border: 0;
@@ -644,7 +621,6 @@ ul#main-nav {
     flex-wrap: wrap;
     width: 100%;
     max-width: 968px;
-    /* height: 46px; */
     border: 1px solid #dce4e3;
     background-color: #f7f9f9;
     margin: 0 auto;
@@ -689,7 +665,6 @@ ul.dropdown li#user-menu a {
 /* INTRO-BLURB ------>  */
 #intro {
     float: left;
-    /* width: 570px; */
     padding-bottom: 50px;
 }
 body.loggedIn #intro {
@@ -720,10 +695,8 @@ ul.individual-urls-people li a {
 }
 /* LOG IN------>  */
 #login {
-    /* float: right; */
     max-width: 332px;
     border: 1px solid #e8ece9;
-    /* margin-right: 25px; */
     padding-bottom: 30px;
     margin-bottom: 30px;
     overflow: hidden;
@@ -736,8 +709,6 @@ body.login #login {
 #login h2 {
     font-size: 22px;
     color: #2485ae;
-    /* padding-left: 15px; */
-    /* padding-top: 18px; */
     border-bottom: none;
 }
 h3.internal-auth:hover {
@@ -772,7 +743,6 @@ h3.internal-auth:hover {
     display: block;
     color: #5e6363;
     padding-top: 0;
-    /* padding-left: 38px; */
     font-size: 14px;
 }
 
@@ -780,10 +750,8 @@ h3.internal-auth:hover {
     border: 0;
     font-size: 14px;
     padding: 5px;
-    /* width: 219px; */
     width: 100%;
     height: 43px;
-    /* margin-left: 38px; */
     background: #fff;
     border: 1px solid #e0dfdf;
     border-radius: 5px;
@@ -798,7 +766,6 @@ h3.internal-auth:hover {
     width: 100%;
     height: 40px;
     margin-top: 20px;
-    /* margin-left: 38px; */
 }
 #login-form p.submit-password {
     height: 40px;
@@ -879,11 +846,9 @@ p.external-auth a.blue:hover {
 /* HOME SEARCH ------>  */
 #search-home {
     float: left;
-    /* width: 533px; */
     width: 100%;
     max-width: 533px;
     margin: 30px 0 0 0;
-    /* margin-right: 24px; */
 }
 #search-home h3 {
     padding: 0;
@@ -893,7 +858,6 @@ p.external-auth a.blue:hover {
 		padding-left: 24px;
 }
 #search-home-field {
-    /* width: 483px; */
     display: flex;
     width: 100%;
     height: 43px;
@@ -1224,12 +1188,9 @@ footer > .row  {
 ul#footer-nav {
     float: right;
     list-style: none;
-    /* height: 20px; */
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
-    /* padding-top: 55px; */
-    /* padding-right: 20px; */
 }
 ul#footer-nav li {
     float: left;
@@ -1428,12 +1389,6 @@ ul#find-filters a.selected {
     overflow: unset;
 }
 
-/* #browse-by > nav::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
-
 #browse-by h2 {
     background: #5e6363;
     font-size: 1.375em;
@@ -1521,7 +1476,6 @@ nav#alpha-browse-container {
 
 /* BROWSE INDIVIDUALS------>  */
 #individuals-in-class {
-    /* width: 629px; */
     width: 100%;
     border: 1px solid #dde4e3;
     background-color: #fff;
@@ -1567,7 +1521,6 @@ article.property ul.property-list {
     border: 1px solid #DDE4E3;
 }
 #photoCropping {
-    /* margin-left: 20px; */
     padding-left: 60px;
     background: url(../images/pointToCropPreview.jpg) 0 30px no-repeat;
     background-position-x: 20px;
@@ -1729,7 +1682,6 @@ h3.internal-auth {
 
     #individual-intro.person #individual-info {
         width: 75%;
-        /* float: unset; */
     }
 }
 
@@ -1822,7 +1774,6 @@ section.property-group h2,
     font-weight: normal;
 }
 article.property {
-    /* width: 852px; */
     width: 100%;
 }
 article.property h3 {
@@ -1840,7 +1791,6 @@ article.property .data-property-statement {
     color: #5e6363;
 }
 article.property ul.property-list li a {
-    /*color: #2485ae;*/   /* cappadona: seems unnecessarily specific and is overriding .more-less from individual.css so I'm commenting out for now */
     line-height: 1.6em;
     word-break: break-all
 }
@@ -2340,11 +2290,6 @@ span.subclassExpandMinus {
     line-break: anywhere;
     line-height: unset;
 }
-
-/* table.form-background tr td {
-    width: 100%;
-    display: block;
-} */
 
 #wrapper-content > div > div > div > div > table > tbody > tr > td > div > form > div {
     display: flex;
