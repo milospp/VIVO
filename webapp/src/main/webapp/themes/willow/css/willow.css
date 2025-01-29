@@ -501,6 +501,7 @@ hr.formDivider {
 /* BRANDING ------>  */
 h1.vivo-logo {
     position: absolute;
+    width: 65%;
     top: 28px;
     left: 0;
     background: url(../images/VIVO-logo.png) 0 0 no-repeat;
