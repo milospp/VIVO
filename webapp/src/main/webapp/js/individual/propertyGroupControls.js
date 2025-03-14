@@ -26,8 +26,7 @@ $(document).ready(function(){
         var groupName = $(this).attr("groupName");
         var $propertyGroupLi = $(this);
 
-        $(this).on('click keydown', function(e) {
-            if (e.type === 'click' || (e.type === 'keydown' && (e.key === 'Enter' || e.keyCode === 13))) {
+        $(this).click(function() {
 
             if ( $propertyGroupLi.attr("class") == "nonSelectedGroupTab clickable" ) {
                 $.each($('li.selectedGroupTab'), function() {
