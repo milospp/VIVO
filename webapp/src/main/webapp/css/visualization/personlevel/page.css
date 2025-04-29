@@ -75,7 +75,7 @@ p.datatable {
 .author_name,
 .neutral_investigator_name,
 .neutral_author_name {
-    color: #2485AE;
+    color: #0B5B7D;
     font-weight: bold;
 }
 .investigator_moniker,
@@ -216,7 +216,7 @@ table.sparkline_wrapper_table td, th {
 }
 #dataPanel .bold {
     font-weight: bold;
-    color: #2485AE;
+    color: #0B5B7D;
     font-size: 14px;
 }
 #dataPanel .investigator_stats .numbers,
@@ -249,7 +249,7 @@ table.sparkline_wrapper_table td, th {
     font-size: .9em;
 }
 #profileTitle {
-    background-color: #2485AE;
+    background-color: #0B5B7D;
     color: white;
     font-weight: bold;
     line-height: 1em !important;
