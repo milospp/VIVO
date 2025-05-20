@@ -8,7 +8,7 @@ input[type="password"] {
     font-size: 14px;
     padding: .5em;
     background: #fff;
-    border: 1px solid #e0dfdf;
+    border: 1px solid #898989;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -50,7 +50,7 @@ input.form-button:visited {
     position: relative;
     border: 0;
     margin: 0;
-    /* background-color: #749a02; */
+    /* background-color: #5F7F00; */
     background-color: #3446A0;
     color: #fff;
     font-size: 14px;
@@ -121,7 +121,7 @@ section.accounts input.delete:active {
     top: 1px;
 }
 form textarea {
-    border: 1px solid #e0dfdf;
+    border: 1px solid #898989;
     border-radius: 4px;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -174,7 +174,7 @@ p.submit {
 .form-item {
     margin-top:.3em;
     background-color: #fff;
-    border-color: #e0dfdf;
+    border-color: #898989;
     font-size: .8em;
     border-width: 1px;
     color: #595B5B;
@@ -293,7 +293,7 @@ form select {
     font-size: 14px;
     padding: .5em;
     background: #fff;
-    border: 1px solid #e0dfdf;
+    border: 1px solid #898989;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;

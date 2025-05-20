@@ -86,7 +86,7 @@ input[type="password"] {
     font-size: 14px;
     padding: .5em;
     background: #fff;
-    border: 1px solid #e0dfdf;
+    border: 1px solid #898989;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -128,7 +128,7 @@ input.form-button:visited {
     position: relative;
     border: 0;
     margin: 0;
-    background-color: #749a02;
+    background-color: #5F7F00;
     color: #fff;
     font-size: 14px;
     font-weight: normal;
@@ -176,7 +176,7 @@ input.submit:hover,
 input#submit:hover,
 input.form-button:hover {
     color: #fff;
-    background-color: #b2d15a;
+    background-color: #435A00;
 }
 input.delete:hover,
 input#delete:hover {
@@ -197,7 +197,7 @@ section.accounts input.delete:active {
     top: 1px;
 }
 form textarea {
-    border: 1px solid #e0dfdf; 
+    border: 1px solid #898989; 
     border-radius: 4px; 
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px; 
@@ -250,7 +250,7 @@ p.submit {
 .form-item {
     margin-top:.3em;
     background-color: #fff;
-    border-color: #e0dfdf;
+    border-color: #898989;
     font-size: .8em;
     border-width: 1px;
     color: #595B5B;
@@ -365,7 +365,7 @@ form select {
    font-size: 14px;
    padding: .5em;
    background: #fff;
-   border: 1px solid #e0dfdf;
+   border: 1px solid #898989;
    border-radius: 5px;
    -moz-border-radius: 5px;
    -webkit-border-radius: 5px;
@@ -506,7 +506,7 @@ ul#header-nav a.log-out {
 #search-field {
     width: 396px;
     height: 38px;
-    background: url(../images/search-interior-pages.png) 0 0 no-repeat;
+    background: url(../images/search-interior-pages-darkened.png) 0 0 no-repeat;
 }
 #search-field input.search {
     text-decoration: none;
@@ -664,7 +664,7 @@ h3.internal-auth:hover {
     height: 24px;
     margin-left: 38px;
     background: #fff;
-    border: 1px solid #e0dfdf;
+    border: 1px solid #898989;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;     
@@ -774,7 +774,7 @@ p.external-auth a.blue:hover {
 #search-home-field {
     width: 483px;
     height: 44px;
-    background: url(../images/search-field-and-button.gif) 0 0 no-repeat;
+    background: url(../images/search-field-and-button-darkened.gif) 0 0 no-repeat;
 }
 #search-home-field input.search {
     text-decoration: none;
@@ -801,7 +801,7 @@ input.search-home-vivo {
 /* SEARCH HOME------>  */ 
 
 #search-home-field {
-		background: url(../images/search-field-and-button.gif) 0 0 no-repeat;
+		background: url(../images/search-field-and-button-darkened.gif) 0 0 no-repeat;
 		width: 520px;
 }
 #search-home-field input.search {
@@ -816,7 +816,6 @@ input.search-homepage {
 		border: 0;
 		background-color: #f9fafa;
 		background-position: right;
-		opacity: .5;
 		text-align:right; 
 }
 
@@ -1101,7 +1100,7 @@ p {
 .green,
 ul#individual-tools li a,
 ul#individual-tools-people li a {
-    color: #b2d15a;
+    color: #435A00;
 }
 .small.button,
 .small.button:visited {
@@ -1115,11 +1114,11 @@ ul#individual-tools-people li a {
 }
 .green.button,
 .green.button:visited {
-    background-color: #749a02;
+    background-color: #5F7F00;
     color: #fff;
 }
 .green.button:hover {
-    background-color: #b2d15a;
+    background-color: #435A00;
 }
 .blue.button,
 .blue.button:visited {
@@ -1543,7 +1542,7 @@ p.address-line {
 }
 /* EDITING DISPLAY------>  */
 .edit-individual {
-    border-left: 1px dotted #B2D15A;
+    border-left: 1px dotted #435A00;
 }
 /* ------------------------------------------------->  */
 /* SITE ADMIN DASHBOARD ---------------------------->  */
@@ -1661,7 +1660,7 @@ input.add-account:hover {
 }
 .disabledSubmit {
     color: #ede ! important;
-    background-color: #b2d15a ! important;
+    background-color: #435A00 ! important;
     cursor: default ! important;
 }
 /* ------------------------------------------------->  */
