@@ -860,10 +860,10 @@ ul#classes-in-classgroup a.selected,
 ul#vgraph-classes a:hover,
 ul#vgraph-classes a.selected {
     background: url(../images/arrow.gif) 0 10px no-repeat;
-    color: #2ea0cf;
+    color: #0C5E7F;
 }
 svg text:hover {
-    color: #2EA0CF;
+    color: #0C5E7F;
 }
 p.view-all {
     clear: both;
@@ -1195,7 +1195,7 @@ ul#individual-tools-people li a {
 ul#find-filters a:hover,
 ul#find-filters a.selected {
     background: url(../images/arrow.gif) 0 6px no-repeat;
-    color: #2ea0cf;
+    color: #0C5E7F;
 }
 /* RESEARCHERS ------>  */
 #researchers {
@@ -1261,7 +1261,7 @@ ul#vgraph-classes li {
 ul#browse-classes a:hover,
 ul#browse-classes a.selected {
     background: url(../images/arrow.gif) 4px 5px no-repeat;
-    color: #2ea0cf;
+    color: #0C5E7F;
 }
 ul#browse-classes .count-classes {    
     font-size: 12px; 
@@ -1273,7 +1273,7 @@ ul#alpha-browse-individuals {
 ul#alpha-browse-individuals a:hover,
 ul#alpha-browse-individuals a.selected {
     background: url(../images/arrowSmall.gif) -3px 7px no-repeat;
-    color: #2ea0cf;
+    color: #0C5E7F;
 }
 ul#alpha-browse-individuals .count-classes,
 ul#vgraph-classes .count-classes {
