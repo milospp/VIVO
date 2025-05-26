@@ -8,13 +8,13 @@
 
 <#if (individual.thumbUrl)??>
     <img src="${individual.thumbUrl}" width="90" alt="${individual.name}" />
-    <h5 class="thumb">
+    <p class="thumb">
         <a href="${individual.profileUrl}" title="${i18n().view_profile_page_for} ${individual.name}">${individual.name}</a>
-    </h5>
+    </p>
 <#else>
-    <h5>
+    <p>
         <a href="${individual.profileUrl}" title="${i18n().view_profile_page_for} ${individual.name}">${individual.name}</a>
-    </h5>
+    </p>
 </#if>
 
 <#if (extra[0].pt)?? >
