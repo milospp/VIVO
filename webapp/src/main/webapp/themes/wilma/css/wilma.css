@@ -244,7 +244,7 @@ p.submit {
     padding: 3px;
 }
 .editingForm .entryFormHead {
-    background-color: #f1f2ee;
+    background-color: #F5F5F5;
     border-color: #dfe6e6;
 }
 .form-item {
@@ -263,7 +263,7 @@ a.return:active {
     background: none;
 }
 .database_header {
-    background-color: #f1f2ee;
+    background-color: #F5F5F5;
     color: #0B5B7D;
     font-size: 1em;
 }
@@ -278,7 +278,7 @@ a.return:active {
 }
 .rownumheader,
 .rownum {
-    background-color: #F1F2EE;
+    background-color: #F5F5F5;
     color: #5F6464;
     font-size: 1em;
 }
@@ -861,7 +861,7 @@ ul#classes-in-classgroup a:hover,
 ul#classes-in-classgroup a.selected,
 ul#vgraph-classes a:hover,
 ul#vgraph-classes a.selected {
-    background: url(../images/arrow.gif) 0 10px no-repeat;
+    background: url(../images/arrow_darkened.gif) 0 10px no-repeat;
     color: #0C5E7F;
 }
 svg text:hover {
@@ -1203,7 +1203,7 @@ ul#individual-tools-people li a {
 }
 ul#find-filters a:hover,
 ul#find-filters a.selected {
-    background: url(../images/arrow.gif) 0 6px no-repeat;
+    background: url(../images/arrow_darkened.gif) 0 6px no-repeat;
     color: #0C5E7F;
 }
 /* RESEARCHERS ------>  */
@@ -1216,7 +1216,7 @@ ul#find-filters a.selected {
     font-size: 1.25em;
     color: #0B5B7D;
     font-weight: normal;
-    background: url(../images/arrow.gif) 140px 27px no-repeat;
+    background: url(../images/arrow_darkened.gif) 140px 27px no-repeat;
 }
 #researchers p {
     font-size: 1.125em;
@@ -1260,7 +1260,7 @@ ul#find-filters a.selected {
 ul#browse-classes {
     border: 1px solid #dde4e3;
     border-right: 0;
-    background-color: #f1f2ee;
+    background-color: #F5F5F5;
 }
 ul#browse-classes li,
 ul#vgraph-classes li {
@@ -1269,7 +1269,7 @@ ul#vgraph-classes li {
 }
 ul#browse-classes a:hover,
 ul#browse-classes a.selected {
-    background: url(../images/arrow.gif) 4px 5px no-repeat;
+    background: url(../images/arrow_darkened.gif) 4px 5px no-repeat;
     color: #0C5E7F;
 }
 ul#browse-classes .count-classes {
@@ -1281,7 +1281,7 @@ ul#alpha-browse-individuals {
 }
 ul#alpha-browse-individuals a:hover,
 ul#alpha-browse-individuals a.selected {
-    background: url(../images/arrowSmall.gif) -3px 7px no-repeat;
+    background: url(../images/arrowSmall-darkened.gif) -3px 7px no-repeat;
     color: #0C5E7F;
 }
 ul#alpha-browse-individuals .count-classes,
@@ -1426,7 +1426,7 @@ ul.individual-urls-people {
 h2#mainImage,
 #share-contact h2,
 h3.internal-auth {
-    color: #5e6363;
+    color: #1d1d1d;
 }
 #individual-info h1.fn {
     font-size: 1.375em;
@@ -1490,7 +1490,7 @@ img.co-author {
 /* PROPERTY GROUP MENU ------>  */
 #property-group-menu {
     width: 920px;
-    background: #f1f2ee;
+    background: #F5F5F5;
 }
 #property-group-menu li {
     background: url(../../../images/individual/separator-property-group-nav.jpg) right 10px no-repeat;

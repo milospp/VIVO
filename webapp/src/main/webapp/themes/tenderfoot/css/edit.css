@@ -168,7 +168,7 @@ p.submit {
     padding: 3px;
 }
 .editingForm .entryFormHead {
-    background-color: #f1f2ee;
+    background-color: #F5F5F5;
     border-color: #dfe6e6;
 }
 .form-item {
@@ -187,7 +187,7 @@ a.return:active {
     background: none;
 }
 .database_header {
-    background-color: #f1f2ee;
+    background-color: #F5F5F5;
     color: #0B5B7D;
     font-size: 1em;
 }
@@ -202,7 +202,7 @@ a.return:active {
 }
 .rownumheader,
 .rownum {
-    background-color: #F1F2EE;
+    background-color: #F5F5F5;
     color: #5F6464;
     font-size: 1em;
 }
