@@ -30,7 +30,7 @@ body {
    background: #f3f3f0 url(../images/header-background.png) center 0 no-repeat;
 }
 a {
-    color: #0B5B7D;
+    color: #12739D;
 }
 a:hover,
 h2 a:hover,
@@ -52,7 +52,7 @@ h2 {
     line-height: 1.5em;
 }
 h2 a {
-    color: #0B5B7D;
+    color: #12739D;
 }
 h2 a:link,
 h2 a:visited {
@@ -264,7 +264,7 @@ a.return:active {
 }
 .database_header {
     background-color: #F5F5F5;
-    color: #0B5B7D;
+    color: #12739D;
     font-size: 1em;
 }
 .database_upperleftcorner {
@@ -382,7 +382,7 @@ a.ingestMenu:visited,
 a.account-menu:link,
 a.account-menu:visited {
     text-decoration: none;
-    color: #0B5B7D;
+    color: #12739D;
 }
 a.ingestMenu:hover,
 a.ingestMenu:active,
@@ -585,7 +585,7 @@ body.loggedIn #intro {
 #intro h2 {
     padding: 35px 0 12px 24px;
     border-bottom: none;
-    color: #0B5B7D;
+    color: #12739D;
 }
 #intro p {
     font-size: 16px;
@@ -603,7 +603,7 @@ p.forgot-password a,
 ul#individual-personInPosition li a,
 ul.individual-urls li a,
 ul.individual-urls-people li a {
-    color: #0B5B7D
+    color: #12739D
 }
 /* LOG IN------>  */
 #login {
@@ -621,7 +621,7 @@ body.login #login {
 }
 #login h2 {
     font-size: 22px;
-    color: #0B5B7D;
+    color: #12739D;
     padding-left: 15px;
     padding-top: 18px;
     border-bottom: none;
@@ -769,7 +769,7 @@ p.external-auth a.blue:hover {
     padding: 0;
     font-size: 22px;
     margin-bottom: 15px;
-    color: #0B5B7D;
+    color: #12739D;
 		padding-left: 24px;
 }
 #search-home-field {
@@ -1159,7 +1159,7 @@ ul#individual-tools-people li a {
  }
 .individualList li a {
     font-weight: normal;
-    color: #0B5B7D;
+    color: #12739D;
 }
 
 /* ------------------------------------------------->  */
@@ -1198,7 +1198,7 @@ ul#individual-tools-people li a {
 }
 #find-by h3 {
     font-size: 1.125em;
-    color: #0B5B7D;
+    color: #12739D;
     font-weight: normal;
 }
 ul#find-filters a:hover,
@@ -1214,7 +1214,7 @@ ul#find-filters a.selected {
 }
 #researchers h3 {
     font-size: 1.25em;
-    color: #0B5B7D;
+    color: #12739D;
     font-weight: normal;
     background: url(../images/arrow_darkened.gif) 140px 27px no-repeat;
 }
@@ -1230,7 +1230,7 @@ ul#find-filters a.selected {
     font-size: 4.375em;
     text-align: center;
     float: left;
-    color: #0B5B7D;
+    color: #12739D;
     border-right: 1px dotted #dde4e3;
     font-weight: bold;
 }
@@ -1242,7 +1242,7 @@ ul#find-filters a.selected {
 }
 #nav-display p {
     font-size: 26px;
-    color: #0B5B7D;
+    color: #12739D;
 }
 #nav-display img {
     border-left: 1px solid #e8e8e8;
@@ -1360,7 +1360,7 @@ article.property ul.property-list {
     background-color: #f2f9fb;
 }
 #admin h3 {
-    background: #0B5B7D;
+    background: #12739D;
     color: #fff;
 }
 #admin .uri-link,
@@ -1376,7 +1376,7 @@ article.property ul.property-list {
 }
 #individual-intro h1 {
     font-size: 1.375em;
-    color: #0B5B7D;
+    color: #12739D;
 }
 #individual-intro span.display-title,
 h1.fn .display-title {
@@ -1473,7 +1473,7 @@ a.all-vivo-publications {
 /* <------ TEMPORAL GRAPH and MAP O' SCIENCE  */
 #temporal-graph h3 a,
 #map-of-science h3 a {
-    color: #0B5B7D;
+    color: #12739D;
     font-size: .8em !important;
     text-decoration: underline;
     vertical-align:text-top;
@@ -1485,7 +1485,7 @@ img.co-author {
 #co-authors h3,
 #right-hand-column h3 {
     font-size: 1.25em;
-    color: #0B5B7D;
+    color: #12739D;
 }
 /* PROPERTY GROUP MENU ------>  */
 #property-group-menu {
@@ -1505,7 +1505,7 @@ img.co-author {
 section.property-group h2,
 #menupage-content h4 {
     font-size: 1.25em;
-    color: #0B5B7D;
+    color: #12739D;
     font-weight: normal;
 }
 article.property {
@@ -1526,7 +1526,7 @@ article.property .data-property-statement {
     color: #5e6363;
 }
 article.property ul.property-list li a {
-    /*color: #0B5B7D;*/   /* cappadona: seems unnecessarily specific and is overriding .more-less from individual.css so I'm commenting out for now */
+    /*color: #12739D;*/   /* cappadona: seems unnecessarily specific and is overriding .more-less from individual.css so I'm commenting out for now */
     line-height: 1.6em;
 }
 /* MISCELLANEOUS ------>  */
@@ -1598,7 +1598,7 @@ p.address-line {
 }
 #revision-levels caption {
     font-size: 18px;
-    color: #0B5B7D;
+    color: #12739D;
 }
 #revision-levels th {
     font-weight: bold;
@@ -1651,7 +1651,7 @@ form.customForm p {
 section.accounts input.delete,
 section.accounts input.delete:visited {
     background-color: #FFF;
-    color: #0B5B7D;
+    color: #12739D;
     border: 1px solid #96c5da;
 }
 section.accounts input.delete:hover {

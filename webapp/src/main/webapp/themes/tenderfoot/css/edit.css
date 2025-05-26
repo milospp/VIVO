@@ -188,7 +188,7 @@ a.return:active {
 }
 .database_header {
     background-color: #F5F5F5;
-    color: #0B5B7D;
+    color: #12739D;
     font-size: 1em;
 }
 .database_upperleftcorner {
@@ -310,7 +310,7 @@ a.ingestMenu:visited,
 a.account-menu:link,
 a.account-menu:visited {
     text-decoration: none;
-    color: #0B5B7D;
+    color: #12739D;
 }
 a.ingestMenu:hover,
 a.ingestMenu:active,
