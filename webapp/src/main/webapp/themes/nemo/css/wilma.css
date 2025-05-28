@@ -1376,7 +1376,7 @@ h1.fn .display-title {
     border-left: 1px solid #a6b1b0;
 }
 ul#individual-tools {
-    color: #8AA149;
+    color: #536520;
 }
 h2#webpage {
     font-weight: bold;
@@ -1390,7 +1390,7 @@ img.individual-photo {
     display: block;
 }
 ul#individual-tools {
-    color: #8AA149
+    color: #536520
 }
 #share-contact a.email,
 #share-contact a.tel,
@@ -1505,7 +1505,7 @@ article.property {
 article.property h3 {
     background: #fafaf9;
     font-size: 1.063em;
-    color: #8aa149;
+    color: #536520;
 }
 article.property ul.property-list li.subclass h3 {
     font-size: 1.063em;
