@@ -99,7 +99,7 @@ Add divs and wrapper to create funnelback basket controls. MUST BE REMOVED BEFOR
 						<div id="individual-tools-people">
 							<span id="iconControlsLeftSide">
 								<button id="uriIcon" class="nostyle" aria-label="${i18n().qr_icon_label}">
-									<img title="${individual.uri}" src="${urls.images}/individual/uriIcon.gif" alt="${i18n().uri_icon}" aria-hidden="true" />
+									<img title="${individual.uri}" src="${urls.images}/individual/uriIcon_darkened.gif" alt="${i18n().uri_icon}" aria-hidden="true" />
 								</button>
 								<#if checkNamesResult?has_content >
 									<button id="qrIcon" class="nostyle" aria-label="${i18n().uri_icon_label}">
@@ -203,7 +203,8 @@ Add divs and wrapper to create funnelback basket controls. MUST BE REMOVED BEFOR
 	var i18nStringsUriRdf = {
 		shareProfileUri: '${i18n().share_profile_uri}',
 		viewRDFProfile: '${i18n().view_profile_in_rdf}',
-		closeString: '${i18n().close}'
+		closeString: '${i18n().close}',
+        uriInputString: '${i18n().uri_input_label}'
 		};
 </script>
 

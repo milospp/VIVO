@@ -48,7 +48,7 @@
                         title="${individual.uri}"
                         class="nostyle"
                         aria-label="${i18n().uri_icon_label}">
-                    <img src="${urls.images}/individual/uriIcon.gif"
+                    <img src="${urls.images}/individual/uriIcon_darkened.gif"
                          alt="${i18n().uri_icon}"
                          aria-hidden="true"/>
                 </button>
@@ -186,7 +186,8 @@
     var i18nStringsUriRdf = {
         shareProfileUri: '${i18n().share_profile_uri?js_string}',
         viewRDFProfile: '${i18n().view_profile_in_rdf?js_string}',
-        closeString: '${i18n().close?js_string}'
+        closeString: '${i18n().close?js_string}',
+        uriInputString: '${i18n().uri_input_label?js_string}'
     };
 </script>
 

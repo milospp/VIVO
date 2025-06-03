@@ -89,7 +89,7 @@
                     <@p.mostSpecificTypes individual />
                     <span id="iconControlsVitro">
                     <button id="uriIcon" class="nostyle" aria-label="${i18n().qr_icon_label}">
-                        <img title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon.gif" alt="uri icon" aria-hidden="true" />
+                        <img title="${individual.uri}" class="middle" src="${urls.images}/individual/uriIcon_darkened.gif" alt="uri icon" aria-hidden="true" />
                     </button>
                     </span>
                 </h1>
@@ -128,7 +128,8 @@
     var i18nStringsUriRdf = {
         shareProfileUri: '${i18n().share_profile_uri}',
         viewRDFProfile: '${i18n().view_profile_in_rdf}',
-        closeString: '${i18n().close}'
+        closeString: '${i18n().close}',
+        uriInputString: '${i18n().uri_input_label}'
     };
         var i18nStrings = {
             displayLess: '${i18n().display_less}',

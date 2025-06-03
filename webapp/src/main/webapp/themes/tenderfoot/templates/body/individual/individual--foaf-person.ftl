@@ -55,7 +55,7 @@
 				<div class="col-md-12">
 					<span id="iconControlsRightSide">
 						<button id="uriIcon" class="nostyle" aria-label="${i18n().qr_icon_label}">
-							<img title="${individual.uri}" src="${urls.images}/individual/uriIcon.gif" alt="${i18n().uri_icon}" aria-hidden="true" />
+							<img title="${individual.uri}" src="${urls.images}/individual/uriIcon_darkened.gif" alt="${i18n().uri_icon}" aria-hidden="true" />
 						</button>
 						<#if checkNamesResult?has_content >
 							<button id="qrIcon" class="nostyle" aria-label="${i18n().uri_icon_label}">
@@ -179,7 +179,8 @@
     var i18nStringsUriRdf = {
         shareProfileUri: '${i18n().share_profile_uri?js_string}',
         viewRDFProfile: '${i18n().view_profile_in_rdf?js_string}',
-        closeString: '${i18n().close?js_string}'
+        closeString: '${i18n().close?js_string}',
+        uriInputString: '${i18n().uri_input_label?js_string}'
     };
 </script>
 

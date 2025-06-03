@@ -18,7 +18,7 @@
         <div id="individual-tools-people">
             <span id="iconControlsLeftSide">
                 <button id="uriIcon" class="nostyle" aria-label="${i18n().qr_icon_label}">
-                    <img title="${individual.uri}" src="${urls.images}/individual/uriIcon.gif" alt="${i18n().uri_icon}" aria-hidden="true"/>
+                    <img title="${individual.uri}" src="${urls.images}/individual/uriIcon_darkened.gif" alt="${i18n().uri_icon}" aria-hidden="true"/>
                 </button>
   				<#if checkNamesResult?has_content >
 					
