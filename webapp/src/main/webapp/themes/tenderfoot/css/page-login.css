@@ -20,7 +20,7 @@ body.login #login {
     border-bottom: none;
 }
 h3.internal-auth:hover {
-    color: #47B6D0;
+    color: #267C90;
 }
 #error-alert {
     margin-left: 0;

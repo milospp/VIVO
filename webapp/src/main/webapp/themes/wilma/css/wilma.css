@@ -627,7 +627,7 @@ body.login #login {
     border-bottom: none;
 }
 h3.internal-auth:hover {
-    color: #47B6D0;
+    color: #267C90;
 }
 #error-alert {
     margin-left: 0;
@@ -1368,7 +1368,7 @@ article.property ul.property-list {
     color: #888c8c;
 }
 #admin a {
-    color: #2a98bc;
+    color: #12739D;
 }
 /* INDIVIDUAL INTRO FOR ANY CLASS ------>  */
 .preferred {
