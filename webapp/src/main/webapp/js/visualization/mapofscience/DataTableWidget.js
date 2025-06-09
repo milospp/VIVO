@@ -105,12 +105,18 @@ var DataTableWidget = Class.extend({
 
 		var dom = me.dom;
 		var filter = $('<div class="science-areas-filter" role="tablist" aria-orientation="horizontal">' +
-				'<span id="' + dom.firstFilterID + '" role="tab" aria-selected="true" aria-controls="datatable" class="' + dom.filterOptionClass + ' ' + dom.activeFilterClass + '">' + dom.firstFilterLabel + '</span> | ' +
-				'<span id="' + dom.secondFilterID + '" role="tab" aria-selected="false" aria-controls="datatable" class="' + dom.filterOptionClass + '">' + dom.secondFilterLabel + '</span>' +
+				'<span id="' + dom.firstFilterID + '" role="tab" aria-selected="true" aria-controls="datatable" class="' + dom.filterOptionClass + ' ' + dom.activeFilterClass + '" tabindex="0">' + dom.firstFilterLabel + '</span> | ' +
+				'<span id="' + dom.secondFilterID + '" role="tab" aria-selected="false" aria-controls="datatable" class="' + dom.filterOptionClass + '" tabindex="0">' + dom.secondFilterLabel + '</span>' +
 				'<button class="nostyle ' + dom.filterInfoIconClass + '" id="imageIconTwo" aria-label="information icon">' +
 					'<img src="'+ infoIconUrl +'" alt="information icon" title="" aria-hidden="true" />' +
 				'</button></div>');
 		me.tableDiv.append(filter);
+
+		$("#" + dom.firstFilterID + ", #" + dom.secondFilterID).on("keydown", function(e) {
+			if (e.key === "Enter" || e.keyCode === 13) {
+				$(this).trigger("click");
+			}
+		});
 
 		const tooltipDataImageIconTwo = {
 			title: "<div>" + $('#toolTipTwo').html() + "</div>",
@@ -239,6 +245,35 @@ var DataTableWidget = Class.extend({
 		    }
 		});
 
+		$('#datatable_paginate').attr('role', 'list')
+		const $paginationList = $('<div role="list" class="pagination-wrapper"></div>');
+
+		['#datatable_first', '#datatable_previous', '#datatable_next', '#datatable_last'].forEach(selector => {
+			const $button = $(selector)
+				.attr('tabindex', 0)
+				.attr('role', 'button')
+				.wrap('<div role="listitem" class="pagination-item" style="display:inline"></div>');
+
+			// Attach keyboard support
+			$button.on('keydown', function(e) {
+				if (e.key === "Enter" || e.key === " ") {
+					e.preventDefault();
+					$(this).trigger("click");
+				}
+			});
+
+			// Move each listitem into the list container
+			$paginationList.append($button.closest('[role="listitem"]'));
+		});
+
+		// Replace the old container with the new accessible structure
+		$('#datatable_paginate').empty().append($paginationList);
+
+		table.find('tbody > tr').each(function() {
+			var $firstTd = $(this).children('td').first();
+			var th = $('<th class="ignore-th"></th>').html($firstTd.html());
+			$firstTd.replaceWith(th);
+		});
 
 		var searchInputBox = $("." + me.dom.searchBarParentContainerClass).find("input[type=search]");
 		searchInputBox.css("width", "140px");
