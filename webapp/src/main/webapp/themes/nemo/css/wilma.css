@@ -489,7 +489,7 @@ ul#header-nav li:last-child {
 ul#header-nav a:hover,
 ul#header-nav a:active {
     text-decoration: none;
-    color: #999;
+    color: #656565;
 }
 ul#header-nav a.log-out {
     padding-left: 10px;
