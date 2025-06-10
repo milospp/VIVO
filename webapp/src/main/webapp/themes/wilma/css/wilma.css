@@ -128,7 +128,7 @@ input.form-button:visited {
     position: relative;
     border: 0;
     margin: 0;
-    background-color: #5F7F00;
+    background-color: #405503;
     color: #fff;
     font-size: 14px;
     font-weight: normal;
@@ -214,7 +214,7 @@ form a:visited.cancel,
 a.return:link,
 a.return:visited {
     text-decoration: underline;
-    color: #f70;
+    color: #B50;
     border-color: none;
     padding-left: 3px;
 }
@@ -225,7 +225,7 @@ a.return:visited {
 form a:hover.cancel,
 form a:active.cancel {
     text-decoration: none;
-    color: #f70;
+    color: #B50;
     background: none;
 }
 .validationError {
@@ -259,7 +259,7 @@ p.submit {
 a.return:hover,
 a.return:active {
     text-decoration: none;
-    color: #f70;
+    color: #B50;
     background: none;
 }
 .database_header {
@@ -1123,7 +1123,7 @@ ul#individual-tools-people li a {
 }
 .green.button,
 .green.button:visited {
-    background-color: #5F7F00;
+    background-color: #405503;
     color: #fff;
 }
 .green.button:hover {
@@ -1155,7 +1155,7 @@ ul#individual-tools-people li a {
 }
 .individualList li,
 .individualList li span {
-  color: #9c9c9c;
+  color: #656565;
  }
 .individualList li a {
     font-weight: normal;

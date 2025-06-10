@@ -50,7 +50,7 @@ input.form-button:visited {
     position: relative;
     border: 0;
     margin: 0;
-    /* background-color: #5F7F00; */
+    /* background-color: #405503; */
     background-color: #3446A0;
     color: #fff;
     font-size: 14px;
@@ -138,7 +138,7 @@ form a:visited.cancel,
 a.return:link,
 a.return:visited {
     text-decoration: underline;
-    color: #f70;
+    color: #B50;
     border-color: none;
     padding-left: 3px;
 }
@@ -149,7 +149,7 @@ a.return:visited {
 form a:hover.cancel,
 form a:active.cancel {
     text-decoration: none;
-    color: #f70;
+    color: #B50;
     background: none;
 }
 .validationError {
@@ -183,7 +183,7 @@ p.submit {
 a.return:hover,
 a.return:active {
     text-decoration: none;
-    color: #f70;
+    color: #B50;
     background: none;
 }
 .database_header {
