@@ -27,7 +27,9 @@ ${stylesheets.add(
         delete_selected: '${i18n().delete_selected?js_string}',
         remove_capability: '${i18n().remove_capability?js_string}',
         remove_group: '${i18n().remove_group?js_string}',
-        expand: '${i18n().expand?js_string}'
+        expand: '${i18n().expand?js_string}',
+        view: '${i18n().view?js_string}',
+        capability_map_remove_person: '${i18n().capability_map_remove_person?js_string}'
     };
     var contextPath = "${urls.base}";
     $(document).ready(function() {
@@ -42,8 +44,27 @@ ${stylesheets.add(
         });
         var conceptArray = $.parseJSON(loadedConcepts.responseText);
         $("#query").autocomplete({
-            source: conceptArray
-        });
+            source: conceptArray,
+            minLength: 1,
+            open: function(event, ui) {
+                $("#query").attr("aria-expanded", "true");
+                $(".ui-autocomplete").attr("id", "query-autocomplete-list").attr("role", "listbox");
+                $(".ui-autocomplete li").attr("role", "option");
+            },
+            close: function(event, ui) {
+                $("#query").attr("aria-expanded", "false");
+            },
+            select: function(event, ui) {
+                $("#query").val(ui.item.value);
+                return false;
+            }
+        }).data("ui-autocomplete")._renderItem = function(ul, item) {
+            return $("<li>")
+                .attr("role", "option")
+                .append($("<div>").text(item.label))
+                .appendTo(ul);
+        };
+
     });
 </script>
 <div class="main" id="main-content" role="main">
@@ -55,7 +76,7 @@ ${stylesheets.add(
     <div id="queryform">
         <p>
             <span>
-                <input name="query" id="query" size="34" value="" onfocus="" accesskey="q" onblur="" type="text" onkeydown="queryKeyDown(event);" aria-label="${i18n().capability_map_input?js_string}">
+                <input name="query" id="query" size="34" value="" onfocus="" accesskey="q" onblur="" type="text" onkeydown="queryKeyDown(event);" aria-label="${i18n().capability_map_input?js_string}" role="combobox" aria-autocomplete="list" aria-haspopup="listbox" aria-expanded="false" aria-owns="query-autocomplete-list">
                 <label id="cutofflabel" for="queryCutoff">Cutoff:</label>
                 <input id="queryCutoff" name="queryCutoff" type="text" title="Cutoff" size="4" value="10">
                 <input value="${i18n().cap_map_search}" type="submit" id="add" type="button" onclick="addKwd();">
@@ -116,11 +137,13 @@ ${stylesheets.add(
                 <div class="result_body">
                     <div class="result_section" id="tabpanel-demo" role="tabpanel" aria-labelledby="tab-demo" tabindex="0">
                         <h2>${i18n().cap_map_cur_search_terms}</h2>
-                        <ul id="log_printout">
-                            <li>
-                                ${i18n().cap_map_text6}
-                            </li>
-                        </ul>
+                        <div id="log_printout">
+                            <ul>
+                                <li>
+                                    ${i18n().cap_map_text6}
+                                </li>
+                            </ul>
+                        </div>
                         <p style="position:absolute; bottom:10px">
                         <div class="capability">${i18n().cap_map_key1}</div>
                         <div class="edge">${i18n().cap_map_key2}</div>

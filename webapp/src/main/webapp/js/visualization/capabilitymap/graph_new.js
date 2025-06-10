@@ -39,7 +39,9 @@ if (typeof i18nStringsCap == 'undefined')
         delete_selected: 'delete selected',
         remove_capability: 'Remove capability',
         remove_group: 'Remove group',
-        expand: 'Expand'
+        expand: 'Expand',
+        view: 'View',
+        capability_map_remove_person: 'Remove person from capability map view',
     }
 };
 var schemes = {
@@ -498,14 +500,16 @@ DetailsPanel.prototype.groupInfo = function(i, group, mode, id) {
                             .attr("width", 50)
                             .css({"float" : "right", "margin-top" : "10px", "clear" : "both"}))
                         )
-                        .append($("<h3/>")
+                        .append($("<p/>")
+                            .css({"font-size" : "1.15em"})
                             .css({"clear" : "none"})
                             .append($("<a>" + p.fullname() + "</a>")
                                 .attr("href", contextPath + "/display?uri=" + encodeURI(p.id))
                                 .attr("target", "_blank")
                             )
                             .append($("<span> </span>"))
-                            .append($("<a>[X]</a>")
+                            .append($("<a tabindex='0'>[X]</a>")
+                                .attr("aria-label", i18nStringsCap.capability_map_remove_person)
                                 .css("cursor", "pointer")
                                 .bind("click", function(k) {
                                     return function() {
@@ -514,14 +518,18 @@ DetailsPanel.prototype.groupInfo = function(i, group, mode, id) {
                                         that.showDetails(mode, id);
                                     }
                                 }(i))
+                                .bind("keydown", function(e) {
+                                    if (e.key === "Enter" || e.keyCode === 13) {
+                                        group.removePerson(group.people[i]);
+                                        render();
+                                        that.showDetails(mode, id);
+                                    }
+                                })
                             )
                         )
                         .append($("<p>" + p.info["md_4"].replace(/\|/g, " / ") + "</p>").css("font-style", "italic"))
                         .append(DetailsPanel.makeslidedown(p.queryText(group.capabilities), p.fullInfo["md_8"], "grants"))
                         .append(DetailsPanel.makeslidedown(p.queryText(group.capabilities), p.fullInfo["md_U"], "publications"))
-
-
-
                     )
 
             }, $("<div/>"))
@@ -878,19 +886,35 @@ var render = function() {
         });
         render();
     }));
+    $("#log_printout").append("<ul></ul>");
     $.each(g.getCapabilities(), function(i, c) {
-        $("#log_printout")
+        $("#log_printout > ul")
             .append($("<li/>")
-                .append($("<a> " + decodeURI(c.term) + "</a>")
-                    .bind("click", function() {
-                        highlight(c.term);
-                        detailsPane.showDetails("capability", c.term);
-                    })
-                    .css("cursor", "pointer")
-                )
-                .prepend($("<input/>").attr("type", "checkbox")
-                    .attr("name", c.term)
-                )
+            .append($("<label/>")
+                .css({
+                "display": "inline",
+                "margin-right": "5px"
+                })
+                .attr("for", "checkbox-" + i)
+                .text(decodeURI(c.term))
+            )
+            .append($("<a tabindex='0'>" + i18nStringsCap.view + "</a>")
+                .bind("click", function() {
+                highlight(c.term);
+                detailsPane.showDetails("capability", c.term);
+                })
+                .bind("keydown", function(e) {
+                if (e.key === "Enter" || e.keyCode === 13) {
+                    highlight(c.term);
+                    detailsPane.showDetails("capability", c.term);
+                }
+                })
+                .css("cursor", "pointer")
+            )
+            .prepend($("<input/>").attr("type", "checkbox")
+                .attr("name", c.term)
+                .attr("id", "checkbox-" + i)
+            )
             );
     });
 }
@@ -1005,7 +1029,8 @@ var reset = function() {
         $("#infovis").html("");
         window.location.hash = "";
 
-        $("#log_printout").empty();
+        $("#log_printout > ul").empty();
+        $("#log_printout > button").remove();
         detailsPane.clearDetails();
         $("#graphDetails").attr("value", "");
         $(".result_section").each(function() {

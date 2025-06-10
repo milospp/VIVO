@@ -5147,6 +5147,14 @@ uil-data:capability_map.VIVO
         uil:hasKey      "capability_map" ;
         uil:hasPackage  "VIVO-languages" .
 
+uil-data:capability_map_remove_person.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Remove person from capability map view"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "capability_map_remove_person" ;
+        uil:hasPackage  "VIVO-languages" .
+
 uil-data:capability_map_input.VIVO
         rdf:type         owl:NamedIndividual ;
         rdf:type         uil:UILabel ;
@@ -5786,6 +5794,8 @@ uil-data:remove_editor_link.VIVO
         uil:hasApp      "VIVO" ;
         uil:hasKey      "remove_editor_link" ;
         uil:hasPackage  "VIVO-languages" .
+
+
 
 uil-data:email.VIVO
         rdf:type         owl:NamedIndividual ;
