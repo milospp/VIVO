@@ -890,30 +890,34 @@ var render = function() {
     $.each(g.getCapabilities(), function(i, c) {
         $("#log_printout > ul")
             .append($("<li/>")
-            .append($("<label/>")
-                .css({
-                "display": "inline",
-                "margin-right": "5px"
-                })
-                .attr("for", "checkbox-" + i)
-                .text(decodeURI(c.term))
+            .append(
+                $("<label/>")
+                    .css({
+                        "display": "inline",
+                        "margin-right": "5px"
+                    })
+                    .attr("for", "checkbox-" + i)
+                    .text(decodeURI(c.term))
             )
-            .append($("<a tabindex='0'>" + i18nStringsCap.view + "</a>")
-                .on("click", function() {
-                highlight(c.term);
-                detailsPane.showDetails("capability", c.term);
-                })
-                .bind("keydown", function(e) {
-                if (e.key === "Enter" || e.keyCode === 13) {
-                    highlight(c.term);
-                    detailsPane.showDetails("capability", c.term);
-                }
-                })
-                .css("cursor", "pointer")
+            .append(
+                $("<a tabindex='0'>" + i18nStringsCap.view + "</a>")
+                    .on("click", function() {
+                        highlight(c.term);
+                        detailsPane.showDetails("capability", c.term);
+                    })
+                    .bind("keydown", function(e) {
+                        if (e.key === "Enter" || e.keyCode === 13) {
+                            highlight(c.term);
+                            detailsPane.showDetails("capability", c.term);
+                        }
+                    })
+                    .css("cursor", "pointer")
             )
-            .prepend($("<input/>").attr("type", "checkbox")
-                .attr("name", c.term)
-                .attr("id", "checkbox-" + i)
+            .prepend(
+                $("<input/>")
+                    .attr("type", "checkbox")
+                    .attr("name", c.term)
+                    .attr("id", "checkbox-" + i)
             )
             );
     });
