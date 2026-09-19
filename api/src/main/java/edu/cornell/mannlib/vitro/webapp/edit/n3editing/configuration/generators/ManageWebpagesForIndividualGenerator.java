@@ -103,11 +103,11 @@ public class ManageWebpagesForIndividualGenerator extends BaseEditConfigurationG
 
         String name = (String) config.getFormSpecificData().get("subjectName");
         I18nBundle i18n = I18n.bundle(vreq);
-        String title = i18n.text("manage_web_pages");;
+        String title = i18n.text("manage_web_pages");
         if (name != null && !name.isEmpty()) {
             title += " - " + name;
         }
-        config.addNewResource("pageTitle", title);
+        config.addFormSpecificData("pageTitle", title);
 
         prepare(vreq, config);
         return config;
