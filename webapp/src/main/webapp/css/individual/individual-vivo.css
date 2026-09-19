@@ -171,7 +171,9 @@ p.view-all-coauthors {
     background-color: #fff;
 }
 #temporal-graph h3 img,
-#map-of-science h3 img {
+#temporal-graph p img,
+#map-of-science h3 img,
+#map-of-science p img {
     padding-right: 10px;
     vertical-align: text-top;
 }
@@ -180,7 +182,9 @@ p.view-all-coauthors {
     background-color: #fff;
 }
 #map-of-science h3,
-#temporal-graph h3 {
+#map-of-science p,
+#temporal-graph h3,
+#temporal-graph p {
     margin: 0;
     padding: 0;
 }

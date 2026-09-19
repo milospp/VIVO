@@ -130,7 +130,8 @@ a.edit-mainImage img.edit-individual {
     background-color: #f3f3f0;
     margin-top: 15px;
 }
-#admin h3 {
+#admin h3,
+#admin #adminPanel {
     background-color: #398AAC;
     color: #fff;
 }
@@ -148,7 +149,8 @@ ul#individual-personInPosition li:last-child {
     padding-bottom: 5px;
 }
 
-section#preferredTitle h2 {
+section#preferredTitle h2,
+section#preferredTitle .individual-section-label {
     float: left;
     font-size: 1em;
     color: #ccc;
