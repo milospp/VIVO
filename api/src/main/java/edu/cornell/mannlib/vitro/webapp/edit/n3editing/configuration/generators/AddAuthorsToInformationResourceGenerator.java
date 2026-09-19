@@ -111,7 +111,7 @@ public class AddAuthorsToInformationResourceGenerator extends VivoBaseGenerator 
         if( subject != null && subject.getName() != null ){
             title += " - " + subject.getName();
         }
-        editConfiguration.addNewResource("pageTitle", title);
+        editConfiguration.addFormSpecificData("pageTitle", title);
 
         return editConfiguration;
     }
