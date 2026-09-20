@@ -894,7 +894,7 @@ var render = function() {
         })
     );
     $("#log_printout").empty().append($("<button>" + i18nStringsCap.delete_selected + "</button>").on("click", function() {
-        $("input[type=checkbox]:checked").each(function() {
+        $("#log_printout input[type=checkbox]:checked").each(function() {
             g.removeCapability($(this).attr("name"));
             $(this).parent().remove();
         });
@@ -902,32 +902,27 @@ var render = function() {
     }));
     $("#log_printout").append("<ul></ul>");
     $.each(g.getCapabilities(), function(i, c) {
+        var termId = "search-term-label-" + i;
         $("#log_printout > ul")
             .append($("<li/>")
-            .append($("<label/>")
-                .css({
-                "display": "inline",
-                "margin-right": "5px"
+            .append($("<input/>").attr({
+                type: "checkbox",
+                name: c.term,
+                id: "checkbox-" + i,
+                "aria-labelledby": termId
+            }))
+            .append($("<a/>")
+                .attr({
+                    href: "#tabpanel-logg",
+                    id: termId,
+                    "class": "search-term-link"
                 })
-                .attr("for", "checkbox-" + i)
                 .text(decodeURI(c.term))
-            )
-            .append($("<a tabindex='0'>" + i18nStringsCap.view + "</a>")
-                .on("click", function() {
-                highlight(c.term);
-                detailsPane.showDetails("capability", c.term);
-                })
-                .on("keydown", function(e) {
-                if (e.key === "Enter" || e.keyCode === 13) {
+                .on("click", function(e) {
+                    e.preventDefault();
                     highlight(c.term);
                     detailsPane.showDetails("capability", c.term);
-                }
                 })
-                .css("cursor", "pointer")
-            )
-            .prepend($("<input/>").attr("type", "checkbox")
-                .attr("name", c.term)
-                .attr("id", "checkbox-" + i)
             )
             );
     });
