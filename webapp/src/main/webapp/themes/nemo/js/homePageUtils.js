@@ -79,7 +79,7 @@ $(document).ready(function(){
                         var imageLine = "";
                         if (facultyImage != undefined) {
                             //imageLine = '<img class="img-circle" src="/vivo' + facultyImage + '" width="160" />';
-                        	imageLine = '<img class="img-circle" src="' + facultyImage + '" width="160" />';
+                        	imageLine = '<img class="img-circle" src="' + facultyImage + '" width="160" alt="" />';
                         }
 
                         active = "";

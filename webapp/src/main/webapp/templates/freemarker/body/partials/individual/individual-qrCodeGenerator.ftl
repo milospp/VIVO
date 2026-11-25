@@ -7,7 +7,7 @@
     <#local qrCodeUrl = getQrCodeUrlForVCard(qrCodeWidth)!>
 
     <#if qrCodeUrl != "">
-        <img src="${qrCodeUrl}" />
+        <img src="${qrCodeUrl}" alt="${i18n().qr_code}" />
     </#if>
 </#macro>
 
@@ -16,7 +16,7 @@
     <#local qrCodeUrl = getQrCodeUrlForLink(qrCodeWidth)!>
 
     <#if qrCodeUrl != "">
-        <img src="${qrCodeUrl}" />
+        <img src="${qrCodeUrl}" alt="${i18n().qr_code}" />
     </#if>
 </#macro>
 

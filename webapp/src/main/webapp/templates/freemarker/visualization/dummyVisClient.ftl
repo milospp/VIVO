@@ -35,7 +35,7 @@ $(document).ready(function() {
 
 	function renderVisualization(visualizationURL) {
 
-		$("#ajax_recipient").empty().html('<img src="${loadingImageLink?url}" />');
+		$("#ajax_recipient").empty().html('<img src="${loadingImageLink?url}" alt="${i18n().processing_indicator}" />');
 
 		   $.ajax({
 			   url: visualizationURL,

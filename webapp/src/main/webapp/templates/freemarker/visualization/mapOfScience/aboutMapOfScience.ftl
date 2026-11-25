@@ -9,13 +9,13 @@
 <h3>${i18n().data_overlay_heading}</h3>
 <p>${i18n().data_overlay_description}</p>
 
-<img src="${aboutImagesRoot}/scimap_discipline.jpg" width="450" height="327" />
-<img src="${aboutImagesRoot}/scimap_subdiscipline.jpg" width="450" height="327" />
+<img src="${aboutImagesRoot}/scimap_discipline.jpg" width="450" height="327" alt="${i18n().map_of_science_discipline_image}" />
+<img src="${aboutImagesRoot}/scimap_subdiscipline.jpg" width="450" height="327" alt="${i18n().map_of_science_subdiscipline_image}" />
 
 <h3>${i18n().expertise_profile_comparision_map_heading}</h3>
 <p>${i18n().expertise_profile_comparision_map_description}</p>
 
-<img src="${aboutImagesRoot}/scimap_comparison.jpg" width="803" height="781" style=
+<img src="${aboutImagesRoot}/scimap_comparison.jpg" width="803" height="781" alt="${i18n().map_of_science_comparison_image}" style=
 "margin-left: 50px;"/>
 
 <h3>${i18n().interactivity_heading}</h3>

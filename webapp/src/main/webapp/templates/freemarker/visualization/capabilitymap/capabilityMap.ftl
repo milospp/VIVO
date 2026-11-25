@@ -27,7 +27,8 @@ ${stylesheets.add(
         delete_selected: '${i18n().delete_selected?js_string}',
         remove_capability: '${i18n().remove_capability?js_string}',
         remove_group: '${i18n().remove_group?js_string}',
-        expand: '${i18n().expand?js_string}'
+        expand: '${i18n().expand?js_string}',
+        refresh: '${i18n().refresh?js_string}'
     };
     var contextPath = "${urls.base}";
     $(document).ready(function() {

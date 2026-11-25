@@ -3,7 +3,7 @@
         <div class="claim-for">
             <h3>${i18n().create_and_link_claim_for(personLabel)}</h3>
             <#if personThumbUrl??>
-                <img src="${urls.base}${personThumbUrl}" />
+                <img src="${urls.base}${personThumbUrl}" alt="${i18n().photo}" />
             </#if>
         </div>
     </#if>

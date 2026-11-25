@@ -41,7 +41,7 @@
       The assumption is made that the service will require the url of the web page and possibly
       an image size as well.
 
-<span id="span-${identifier}" class="webpage-indicator-qv">${strings.loading_website_image}. . .&nbsp;&nbsp;&nbsp;<img  src="${urls.images}/indicatorWhite.gif"></span>
+<span id="span-${identifier}" class="webpage-indicator-qv">${strings.loading_website_image}. . .&nbsp;&nbsp;&nbsp;<img src="${urls.images}/indicatorWhite.gif" alt=""></span>
         <a title="${i18n().click_to_view_web_page(linkText)}" href="${statement.url}">
             <img id="img-${identifier}" class="org-webThumbnail" src="http://your.web.service/getsTheImage?url=${statement.url}${imgSize}" alt="${i18n().screenshot_of_webpage(statement.url)}" style="display:none"/>
 

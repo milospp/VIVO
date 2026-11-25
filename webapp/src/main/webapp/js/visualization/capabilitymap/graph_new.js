@@ -493,6 +493,7 @@ DetailsPanel.prototype.groupInfo = function(i, group, mode, id) {
                         .addClass("person_details")
                         .append(!p.info["md_3"] ? $("<span/>") : ($("<img/>")
                             .attr("src", contextPath + p.info["md_3"])
+                            .attr("alt", "")
                             .attr("width", 50)
                             .css({"float" : "right", "margin-top" : "10px", "clear" : "both"}))
                         )
@@ -1067,6 +1068,7 @@ $(document).ready(function() {
         if ($(this).data("prev") != $(this).val() && $("#infovis").html() != "") {
             $("#cutofflabel").empty().append($("<img/>")
                 .attr("src", contextPath + "/images/visualization/capabilitymap/refresh.png")
+                .attr("alt", i18nStringsCap.refresh)
                 .on("click", function() {
                     $.each(g.getCapabilities(), function(i, c) {
                         if (c.cutoff != queryCutoffElem.value) {

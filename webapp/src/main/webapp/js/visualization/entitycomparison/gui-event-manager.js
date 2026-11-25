@@ -470,7 +470,7 @@ function setupLoadingScreen(visContainerDIV) {
 
     visContainerDIV.block({
         message: '<div id="loading-data-container"><h3><img id="data-loading-icon" src="' + loadingImageLink
-        			+ '" />&nbsp;' + i18nStringsGuiEvents.loadingDataFor + ' <i>'
+        			+ '" alt="" />&nbsp;' + i18nStringsGuiEvents.loadingDataFor + ' <i>'
         			+ organizationLabel
         			+ '</i></h3></div>'
     });
@@ -481,7 +481,7 @@ function setupLoadingScreen(visContainerDIV) {
     	$("#loading-data-container")
     		.html('<h3><img id="refresh-page-icon" src="'
     				+ refreshPageImageLink
-	    			+ '" />&nbsp;' + i18nStringsGuiEvents.dataForString + ' <i>' + organizationLabel
+	    			+ '" alt="" />&nbsp;' + i18nStringsGuiEvents.dataForString + ' <i>' + organizationLabel
 	    			+ '</i> ' + i18nStringsGuiEvents.refreshingDataMsg
 	    			+ '</h3>')
 	    	.css({'cursor': 'pointer'});

@@ -6340,3 +6340,35 @@ uil-data:organization_trends_report.VIVO
         rdfs:label       "Trends report"@en-US ;
         uil:hasApp       "VIVO" ;
         uil:hasKey       "organization_trends_report" .
+
+uil-data:map_of_science_discipline_image.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Map of Science showing the 13 disciplines"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "map_of_science_discipline_image" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:map_of_science_subdiscipline_image.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Map of Science showing the 554 subdisciplines"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "map_of_science_subdiscipline_image" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:map_of_science_comparison_image.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Map of Science comparing the expertise profiles of two organizations"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "map_of_science_comparison_image" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:refresh.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Refresh"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "refresh" ;
+        uil:hasPackage  "VIVO-languages" .

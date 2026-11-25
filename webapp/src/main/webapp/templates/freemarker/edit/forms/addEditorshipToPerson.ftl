@@ -58,7 +58,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <#assign orgLabelValue = orgLabelDisplayValue />
     </#if>
     <section id="error-alert" role="alert">
-        <img src="${urls.images}/iconAlert.png" width="24" height="24" alert="${i18n().error_alert_icon}" />
+        <img src="${urls.images}/iconAlert.png" width="24" height="24" alt="${i18n().error_alert_icon}" />
         <p>
         <#--below shows examples of both printing out all error messages and checking the error message for a specific field-->
         <#--Checking if Org Type field is empty-->

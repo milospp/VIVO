@@ -29,7 +29,7 @@ function setupLoadingScreen() {
 
     $("#" + responseContainerID).block({
         message: '<div id="loading-data-container"><h3><img id="data-loading-icon" src="' + loadingImageLink
-        			+ '" />&nbsp;' + i18nStrings.loadingDataFor + ' <i>'
+        			+ '" alt="" />&nbsp;' + i18nStrings.loadingDataFor + ' <i>'
         			+ entityLabel
         			+ '</i></h3></div>'
     });
@@ -40,7 +40,7 @@ function setupLoadingScreen() {
     	$("#loading-data-container")
     		.html('<h3><img id="refresh-page-icon" src="'
     				+ refreshPageImageLink
-	    			+ '" />&nbsp;Data for <i>' + entityLabel
+	    			+ '" alt="" />&nbsp;Data for <i>' + entityLabel
 	    			+ '</i> ' + i18nStrings.mapBeingRefreshed + '</h3>')
 	    	.css({'cursor': 'pointer'});
     }, 10 * 1000);

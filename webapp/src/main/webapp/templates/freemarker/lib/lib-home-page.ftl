@@ -19,7 +19,7 @@
         <h4>${i18n().faculty_capitalized}</h4>
         <div id="tempSpacing">
             <span>${i18n().loading_faculty}&nbsp;&nbsp;&nbsp;
-                <img  src="${urls.images}/indicatorWhite.gif">
+                <img src="${urls.images}/indicatorWhite.gif" alt="${i18n().processing_indicator}">
             </span>
         </div>
         <div id="research-faculty-mbrs">
@@ -214,7 +214,7 @@ var urlsBase = "${urls.base}";
         <div id="researcherTotal"></div>
         <div id="timeIndicatorGeo">
             <span>${i18n().loading_map_information}&nbsp;&nbsp;&nbsp;
-                <img  src="${urls.images}/indicatorWhite.gif">
+                <img src="${urls.images}/indicatorWhite.gif" alt="${i18n().processing_indicator}">
             </span>
         </div>
         <div id="mapGlobal" class="mapArea"></div>
