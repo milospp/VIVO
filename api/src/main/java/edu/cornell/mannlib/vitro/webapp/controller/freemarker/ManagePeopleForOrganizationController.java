@@ -21,6 +21,7 @@ import edu.cornell.mannlib.vitro.webapp.beans.VClass;
 import edu.cornell.mannlib.vitro.webapp.controller.VitroRequest;
 import edu.cornell.mannlib.vitro.webapp.controller.freemarker.responsevalues.ResponseValues;
 import edu.cornell.mannlib.vitro.webapp.controller.freemarker.responsevalues.TemplateResponseValues;
+import edu.cornell.mannlib.vitro.webapp.i18n.I18n;
 import edu.cornell.mannlib.vitro.webapp.dao.VClassDao;
 import edu.cornell.mannlib.vitro.webapp.dao.jena.QueryUtils;
 
@@ -58,6 +59,7 @@ public class ManagePeopleForOrganizationController extends FreemarkerHttpServlet
         Individual subject = vreq.getWebappDaoFactory().getIndividualDao().getIndividualByURI(subjectUri);
         if( subject != null && subject.getName() != null ){
              body.put("subjectName", subject.getName());
+             body.put("title", I18n.text(vreq, "manage_affiliated_people") + " " + subject.getName());
         }else{
              body.put("subjectName", null);
         }

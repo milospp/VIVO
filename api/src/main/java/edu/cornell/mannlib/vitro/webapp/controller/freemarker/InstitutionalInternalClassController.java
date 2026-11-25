@@ -31,6 +31,7 @@ import edu.cornell.mannlib.vitro.webapp.controller.freemarker.responsevalues.Res
 import edu.cornell.mannlib.vitro.webapp.controller.freemarker.responsevalues.TemplateResponseValues;
 import edu.cornell.mannlib.vitro.webapp.dao.VitroVocabulary;
 import edu.cornell.mannlib.vitro.webapp.dao.jena.event.EditEvent;
+import edu.cornell.mannlib.vitro.webapp.i18n.I18n;
 import edu.cornell.mannlib.vitro.webapp.modelaccess.ModelAccess;
 /*
  * Custom controller for menu management.  This will be replaced later once N3 Editing
@@ -84,6 +85,7 @@ public class InstitutionalInternalClassController extends FreemarkerHttpServlet 
 
     	data.put("formUrl", ContextPath.getPath(vreq) + EDIT_FORM);
     	data.put("cancelUrl", ContextPath.getPath(vreq) + REDIRECT_PAGE);
+    	data.put("title", I18n.text(vreq, "institutional_internal_class"));
 
     	//if no local namespaces, then provide message to display
     	//if existing namespace(s), then check
