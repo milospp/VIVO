@@ -6355,3 +6355,33 @@ uil-data:person_level_visualization_title.VIVO
         uil:hasApp       "VIVO" ;
         uil:hasKey       "person_level_visualization_title" ;
         uil:hasPackage   "VIVO-languages" .
+
+uil-data:organization_metrics_report.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Metrics report"@en-US ;
+        uil:hasApp       "VIVO" ;
+        uil:hasKey       "organization_metrics_report" .
+
+uil-data:organization_trends_report.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Trends report"@en-US ;
+        uil:hasApp       "VIVO" ;
+        uil:hasKey       "organization_trends_report" .
+
+uil-data:claim_publications.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "Claim Publications"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "claim_publications" ;
+        uil:hasPackage  "VIVO-languages" .
+
+uil-data:orcid_login.VIVO
+        rdf:type         owl:NamedIndividual ;
+        rdf:type         uil:UILabel ;
+        rdfs:label       "ORCID Login"@en-US ;
+        uil:hasApp      "VIVO" ;
+        uil:hasKey      "orcid_login" ;
+        uil:hasPackage  "VIVO-languages" .

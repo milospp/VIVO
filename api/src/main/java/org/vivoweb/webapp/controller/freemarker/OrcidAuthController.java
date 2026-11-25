@@ -32,6 +32,7 @@ import edu.cornell.mannlib.vitro.webapp.controller.freemarker.UrlBuilder;
 import edu.cornell.mannlib.vitro.webapp.controller.freemarker.responsevalues.DirectRedirectResponseValues;
 import edu.cornell.mannlib.vitro.webapp.controller.freemarker.responsevalues.ResponseValues;
 import edu.cornell.mannlib.vitro.webapp.controller.freemarker.responsevalues.TemplateResponseValues;
+import edu.cornell.mannlib.vitro.webapp.i18n.I18n;
 import edu.cornell.mannlib.vitro.webapp.rdfservice.RDFServiceException;
 import edu.cornell.mannlib.vitro.webapp.rdfservice.ResultSetConsumer;
 import edu.cornell.mannlib.vitro.webapp.utils.http.HttpClientFactory;
@@ -112,6 +113,11 @@ public class OrcidAuthController extends FreemarkerHttpServlet {
      * @param vreq
      * @return
      */
+    @Override
+    protected String getTitle(String siteName, VitroRequest vreq) {
+        return I18n.text(vreq, "orcid_login");
+    }
+
     @Override
     protected ResponseValues processRequest(VitroRequest vreq) {
         String requestURI = vreq.getRequestURI();

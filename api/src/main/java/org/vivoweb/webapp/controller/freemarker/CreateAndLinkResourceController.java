@@ -22,6 +22,7 @@ import edu.cornell.mannlib.vitro.webapp.dao.IndividualDao;
 import edu.cornell.mannlib.vitro.webapp.dao.InsertException;
 import edu.cornell.mannlib.vitro.webapp.dao.NewURIMakerVitro;
 import edu.cornell.mannlib.vitro.webapp.edit.n3editing.VTwo.N3EditUtils;
+import edu.cornell.mannlib.vitro.webapp.i18n.I18n;
 import edu.cornell.mannlib.vitro.webapp.modelaccess.ModelNames;
 import edu.cornell.mannlib.vitro.webapp.rdfservice.ChangeSet;
 import edu.cornell.mannlib.vitro.webapp.rdfservice.RDFService;
@@ -229,6 +230,11 @@ public class CreateAndLinkResourceController extends FreemarkerHttpServlet {
      * @param vreq
      * @return
      */
+    @Override
+    protected String getTitle(String siteName, VitroRequest vreq) {
+        return I18n.text(vreq, "claim_publications");
+    }
+
     @Override
     protected ResponseValues processRequest(VitroRequest vreq) {
         // Get the current URL for parsing
