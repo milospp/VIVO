@@ -20,7 +20,7 @@
 	    <input type="hidden" value="${objectUri}" name="objectUri" />
 	    <input type="hidden" value="create" name="cmd" />
 
-	    <select id="typeOfNew" name="typeOfNew">
+	    <select id="typeOfNew" name="typeOfNew" aria-label="${i18n().add_new_of_type}">
 	    <#assign typeKeys = typesList?keys />
 	    <#list typeKeys as typeKey>
 	        <option value="${typeKey}" role="option"> ${typesList[typeKey]} </option>

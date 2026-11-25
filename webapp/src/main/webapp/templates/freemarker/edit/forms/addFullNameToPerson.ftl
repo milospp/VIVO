@@ -67,13 +67,13 @@
         <p>
             <label for="firstName">${i18n().first_name} ${requiredHint}<span style="padding-left:300px">${i18n().name_prefix}</span></label>
             <input  size="25"  type="text" id="firstName" name="firstName" value="${firstNameValue}" />
-            <input style="margin-left:138px" size="12"  type="text" id="prefix" name="prefix" value="${prefixValue}" />
+            <input style="margin-left:138px" size="12"  type="text" id="prefix" name="prefix" aria-label="${i18n().name_prefix}" value="${prefixValue}" />
         </p>
 
         <p>
             <label for="middleName">${i18n().middle_name}<span style="padding-left:293px">${i18n().name_suffix}</span></label>
             <input  size="25"  type="text" id="middleName" name="middleName" value="${middleNameValue}" />
-            <input style="margin-left:138px"  size="12"  type="text" id="suffix" name="suffix" value="${suffixValue}" />
+            <input style="margin-left:138px"  size="12"  type="text" id="suffix" name="suffix" aria-label="${i18n().name_suffix}" value="${suffixValue}" />
         </p>
 
         <p>

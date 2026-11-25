@@ -54,7 +54,7 @@
 
     <label for="urlType">${i18n().url_type}${requiredHint}</label>
     <#assign urlTypeOpts = editConfiguration.pageData.urlType />
-    <select name="urlType" style="margin-top:-2px" >
+    <select id="urlType" name="urlType" style="margin-top:-2px" >
         <#list urlTypeOpts?keys?reverse as key>
             <option value="${key}" >
                 <#if urlTypeOpts[key] == "F1000 Link">

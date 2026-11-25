@@ -109,7 +109,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <label for="person">${i18n().person_capitalized}: ${i18n().last_name}  ${requiredHint}<span style="padding-left:322px">${i18n().first_name}  ${requiredHint}</span></label>
             <input class="acSelector" size="50"  type="text" acGroupName="person" id="person" name="personLabel" value="${personLabelValue}" >
             <input type="text" size="50"  id="maskLabelBuilding" name="maskLabelBuilding" value="" style="display:none" >
-            <input  size="30"  type="text" id="firstName" name="firstName" value="${firstNameValue}" ><br />
+            <input  size="30"  type="text" id="firstName" name="firstName" aria-label="${i18n().first_name}" value="${firstNameValue}" ><br />
             <input type="hidden" id="lastName" name="lastName" value="">
             <input class="display" type="hidden" acGroupName="person" id="personDisplay" name="personLabelDisplay" value="${personLabelDisplayValue}" >
     </p>
@@ -126,7 +126,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 
     <label for="roleType">${i18n().role_type} ${requiredHint}</label>
     <#assign roleTypeOpts = editConfiguration.pageData.roleType />
-    <select name="roleType" style="margin-top:-2px" >
+    <select id="roleType" name="roleType" style="margin-top:-2px" >
         <option value="" <#if roleTypeValue == "">selected</#if>>${i18n().select_one}</option>
         <#list roleTypeOpts?keys as key>
             <option value="${key}"  <#if roleTypeValue == key>selected</#if>>${roleTypeOpts[key]}</option>

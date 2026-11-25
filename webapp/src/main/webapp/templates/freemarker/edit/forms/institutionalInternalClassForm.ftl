@@ -59,7 +59,7 @@ edu.cornell.mannlib.vitro.webapp.edit.n3editing.configuration.generators.Institu
 
             <#--If more than one local namespace, generate select-->
             <#if multipleLocalNamespaces = true>
-                <label for="existingLocalNamespace">${i18n().local_namespace}<span class="requiredHint"> *</span></label>
+                <label for="existingLocalNamespaces">${i18n().local_namespace}<span class="requiredHint"> *</span></label>
 
                 <select id="existingLocalNamespaces" name="existingLocalNamespaces" role="combobox">
                     <#assign namespaceUris = existingLocalNamespaces?keys />

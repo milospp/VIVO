@@ -146,12 +146,12 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
       <p></p>
       <#--Need to draw edit elements for dates here-->
        <#if htmlForElements?keys?seq_contains("startField")>
-  			<label for="startField-year" class="dateTime" for="startField">${i18n().start_capitalized}</label>
+  			<label for="startField-year" class="dateTime">${i18n().start_capitalized}</label>
   			${htmlForElements["startField"]} ${yearHint}
        </#if>
        <p></p>
        <#if htmlForElements?keys?seq_contains("endField")>
-  			<label for="endField-year" class="dateTime" for="endField">${i18n().end_capitalized}</label>
+  			<label for="endField-year" class="dateTime">${i18n().end_capitalized}</label>
   		 	${htmlForElements["endField"]} ${yearHint}
        </#if>
 

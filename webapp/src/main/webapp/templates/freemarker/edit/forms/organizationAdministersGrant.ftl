@@ -74,7 +74,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 
     <form id="organizationAdministersGrant" class="customForm noIE67" action="${submitUrl}">
     <p>
-        <label for="relatedIndLabel">${i18n().grant_name} ${requiredHint}</label>
+        <label for="grant">${i18n().grant_name} ${requiredHint}</label>
             <input class="acSelector" size="50"  type="text" id="grant" acGroupName="grant" name="grantLabel" value="${grantLabelValue}">
             <input class="display" type="hidden" id="grantDisplay" acGroupName="grant" name="grantLabelDisplay" value="${grantLabelDisplayValue}">
     </p>

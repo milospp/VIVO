@@ -108,9 +108,9 @@
     <h3>${i18n().add_an_author}</h3>
 
     <div style="display:inline">
-        <input type="radio" name="authorType" class="person-radio" value="" role="radio" checked />
+        <input type="radio" id="Person" name="authorType" class="person-radio" value="" role="radio" checked />
         <label class="inline" for="Person" >${i18n().person_capitalized}</label>
-        <input type="radio" name="authorType" class="org-radio" value="http://xmlns.com/foaf/0.1/Organization" role="radio" style="display:inline;margin-left:18px" />
+        <input type="radio" id="Organization" name="authorType" class="org-radio" value="http://xmlns.com/foaf/0.1/Organization" role="radio" style="display:inline;margin-left:18px" />
         <label class="inline" for="Organization">${i18n().organization_capitalized}</label>
     </div>
 

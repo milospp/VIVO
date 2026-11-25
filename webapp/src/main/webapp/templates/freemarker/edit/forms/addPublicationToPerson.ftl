@@ -227,7 +227,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
             <span class="note">(${i18n().required_with_last_name})</span>
         </label>
         <input class="acSelector" size="50"  type="text" id="editor" name="editor" acGroupName="editor"  value="${editorValue}" />
-        <input  size="30"  type="text" id="firstName" name="firstName" value="${firstNameValue}" ><br />
+        <input  size="30"  type="text" id="firstName" name="firstName" aria-label="${i18n().first_name}" value="${firstNameValue}" ><br />
         <input type="hidden" id="lastName" name="lastName" value="">
         <input class="display" type="hidden" id="editorDisplay" name="editorDisplay" acGroupName="editor"  value="${editorDisplayValue}" />
     </p>
@@ -270,7 +270,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <label for="volume" id="volLabel">${i18n().volume_capitalized}</label>
         <label for="number" id="nbrLabel" class="vniLabels">${i18n().number_capitalized}</label>
         <label for="issue" id="issueLabel" class="vniLabels">${i18n().issue_capitalized}</label>
-        <label for="issue" id="chapterNbrLabel" class="vniLabels">${i18n().chapter_capitalized}</label>
+        <label for="chapterNbr" id="chapterNbrLabel" class="vniLabels">${i18n().chapter_capitalized}</label>
     </p>
     <p>
         <input  size="4" type="text" id="volume" name="volume" value="${volumeValue}" />
@@ -293,7 +293,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
     <p>
     <#assign htmlForElements = editConfiguration.pageData.htmlForElements />
     <#if htmlForElements?keys?seq_contains("dateTime")>
-        <label class="dateTime" for="pubDate">${i18n().publication_date}</label><p></p>
+        <label class="dateTime" for="dateTime-year">${i18n().publication_date}</label><p></p>
 		${htmlForElements["dateTime"]} ${yearHint}
     </#if>
     </p>

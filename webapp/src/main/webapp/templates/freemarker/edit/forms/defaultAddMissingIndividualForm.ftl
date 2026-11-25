@@ -54,7 +54,7 @@ ${i18n().new_entry_for(editConfiguration.propertyPublicDomainTitle, editConfigur
     </p>
 
     <p>
-        <label for="lastName">${i18n().middle_name} </label>
+        <label for="middleName">${i18n().middle_name} </label>
         <input size="30"  type="text" id="middleName" name="middleName" value="${middleNameValue}" />
     </p>
 
@@ -66,7 +66,7 @@ ${i18n().new_entry_for(editConfiguration.propertyPublicDomainTitle, editConfigur
     <input type="hidden" id="label" name="label" value="${labelValue}" />
 <#else>
     <p>
-        <label for="name">${i18n().name_capitalized} ${requiredHint}</label>
+        <label for="label">${i18n().name_capitalized} ${requiredHint}</label>
         <input size="30"  type="text" id="label" name="label" value="${labelValue}" />
     </p>
 </#if>

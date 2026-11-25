@@ -25,7 +25,7 @@ ${i18n().check_grants_to_exclude}
         <ul >
             <#list grantList as grant>
             <li>
-                <input type="checkbox" class="itemCheckbox" <#if grant.hideThis??>checked</#if> />${grant.label!grant.activity!}
+                <input type="checkbox" class="itemCheckbox" aria-label="${(grant.label!grant.activity!)?html}" <#if grant.hideThis??>checked</#if> />${grant.label!grant.activity!}
             </li>
             <script type="text/javascript">
                 itemData.push({

@@ -99,7 +99,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 
     <form id="addPresenterRoleToPerson" class="customForm noIE67" action="${submitUrl}">
     <p class="inline">
-      <label for="presentationType">${i18n().presentation_type}<#if editMode != "edit"> ${requiredHint}<#else>:</#if></label>
+      <label for="typeSelector">${i18n().presentation_type}<#if editMode != "edit"> ${requiredHint}<#else>:</#if></label>
       <#assign presentationTypeOpts = editConfiguration.pageData.presentationType />
       <select id="typeSelector" name="presentationType" acGroupName="presentation">
         <option value="" selected="selected">${i18n().select_one}</option>
@@ -129,7 +129,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <input  size="50"  type="text" id="roleLabel" name="roleLabel" value="${roleLabelValue}" />
     </p>
   <p>
-      <label for="org">${i18n().presented_at}</label>
+      <label for="conference">${i18n().presented_at}</label>
       <input  class="acSelector" size="50" acGroupName="conference" type="text" id="conference" name="conferenceLabel" value="${conferenceLabelValue}" />
       <input  class="display" acGroupName="conference" type="hidden" id="conferenceDisplay" name="conferenceLabelDisplay" value="${conferenceLabelDisplayValue}" />
   </p>
@@ -148,12 +148,12 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
     <#--Need to draw edit elements for dates here-->
     <#assign htmlForElements = editConfiguration.pageData.htmlForElements />
     <#if htmlForElements?keys?seq_contains("startField")>
-        <label class="dateTime" for="startField">${i18n().start_capitalized}</label>
+        <label class="dateTime" for="startField-year">${i18n().start_capitalized}</label>
 		${htmlForElements["startField"]} ${yearHint}
     </#if>
     <br/>
     <#if htmlForElements?keys?seq_contains("endField")>
-		<label class="dateTime" for="endField">${i18n().end_capitalized}</label>
+		<label class="dateTime" for="endField-year">${i18n().end_capitalized}</label>
 	 	${htmlForElements["endField"]} ${yearHint}
     </#if>
 	<#--End draw elements-->

@@ -33,7 +33,7 @@
     </#if>
 
     <p>
-		<input class="acSelector" size="50"  type="text" id="literal" name="literal" value="${literalValues!?html}" />
+		<input class="acSelector" size="50"  type="text" id="literal" name="literal" <#if !editConfiguration.dataPredicatePublicDescription?has_content>aria-label="${editConfiguration.formTitle?html}"</#if> value="${literalValues!?html}" />
 	</p>
 
 	<div class="acSelection">

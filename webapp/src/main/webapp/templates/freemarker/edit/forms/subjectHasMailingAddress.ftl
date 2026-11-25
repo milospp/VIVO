@@ -71,23 +71,23 @@
     <form id="personHasMailingAddress" class="customForm noIE67" action="${submitUrl}">
 
         <p>
-            <label for="streetAddress">${i18n().street_address} 1 ${requiredHint}</label>
+            <label for="streetAddressOne">${i18n().street_address} 1 ${requiredHint}</label>
             <input  size="40"  type="text" id="streetAddressOne" name="streetAddressOne" value="" />
         </p>
 
         <p>
-            <label for="streetAddress">${i18n().street_address} 2</label>
+            <label for="streetAddressTwo">${i18n().street_address} 2</label>
             <input  size="40"  type="text" id="streetAddressTwo" name="streetAddressTwo" value="" />
             <input  type="hidden" id="streetAddress" name="streetAddress" value="${streetAddressValue}" />
         </p>
 
         <p>
-            <label for="locality">${i18n().city_locality} ${requiredHint}</label>
+            <label for="city">${i18n().city_locality} ${requiredHint}</label>
             <input  size="40"  type="text" id="city" name="locality" value="${localityValue}" />
         </p>
 
         <p>
-            <label for="region" id="stateLabel">${i18n().region}</label>
+            <label for="state" id="stateLabel">${i18n().region}</label>
             <input  size="40"  type="text" id="state" name="region" value="${regionValue}" />
         </p>
 
@@ -97,7 +97,7 @@
         </p>
 
         <p>
-            <label for="country" style="margin-bottom:-4px">${i18n().country} ${requiredHint}</label>
+            <label for="countryEditMode" style="margin-bottom:-4px">${i18n().country} ${requiredHint}</label>
             <input  size="20"  type="text"  id="countryEditMode" name="country" value="${countryValue}" />
         </p>
 

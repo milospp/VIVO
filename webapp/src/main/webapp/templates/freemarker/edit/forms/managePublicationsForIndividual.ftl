@@ -37,7 +37,7 @@ ${i18n().check_pubs_to_exclude}
         <ul >
             <#list pubs as pub>
             <li>
-                <input type="checkbox" class="itemCheckbox" <#if pub.hideThis??>checked</#if> />
+                <input type="checkbox" class="itemCheckbox" aria-label="<#if pub.title?has_content>${pub.title?html}<#else>${i18n().title_not_found}</#if>" <#if pub.hideThis??>checked</#if> />
                 <#if pub.title?has_content>${pub.title!}<#else>${i18n().title_not_found}</#if>
             </li>
             <script type="text/javascript">

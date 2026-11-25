@@ -57,7 +57,7 @@
     <form id="personHasOrcidId" class="customForm noIE67" action="${submitUrl}">
 
         <p>
-            <label for="orcidId">ORCID iD ${requiredHint}</label>
+            <label for="orcidIdDisplay">ORCID iD ${requiredHint}</label>
             <input  size="35"  type="text" id="orcidIdDisplay" name="orcidIdDisplay" value="${orcidIdValue}" />
             <input  type="hidden" id="orcidId" name="orcidId" value="" />
         </p>

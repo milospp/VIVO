@@ -103,7 +103,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 
     <form id="personHasAdvisingRelationship" class="customForm noIE67" action="${submitUrl}">
     <p class="inline">
-      <label for="orgType">${i18n().advising_relationship_type}<#if editMode != "edit"> ${requiredHint}<#else>:</#if></label>
+      <label for="selector">${i18n().advising_relationship_type}<#if editMode != "edit"> ${requiredHint}<#else>:</#if></label>
       <#assign advisingRelTypeOpts = editConfiguration.pageData.advisingRelType />
       <#if editMode == "edit">
         <#list advisingRelTypeOpts?keys as key>
@@ -125,7 +125,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <label for="advisor">${i18n().advisor_capitalized}: ${i18n().last_name}  ${requiredHint}<span style="padding-left:322px">${i18n().first_name}  ${requiredHint}</span></label>
             <input class="acSelector" size="50"  type="text" acGroupName="advisor" id="advisor" name="advisorLabel" value="${advisorLabelValue}" >
             <input type="text" size="50"  id="maskLabelBuilding" name="maskLabelBuilding" value="" style="display:none" >
-            <input  size="30"  type="text" id="firstName" name="firstName" value="${firstNameValue}" ><br />
+            <input  size="30"  type="text" id="firstName" name="firstName" aria-label="${i18n().first_name}" value="${firstNameValue}" ><br />
             <input type="hidden" id="lastName" name="lastName" value="">
             <input class="display" type="hidden" acGroupName="advisor" id="advisorDisplay" name="advisorLabelDisplay" value="${advisorLabelDisplayValue}" >
     </p>
@@ -175,12 +175,12 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
     <#--Need to draw edit elements for dates here-->
     <#assign htmlForElements = editConfiguration.pageData.htmlForElements />
     <#if htmlForElements?keys?seq_contains("startField")>
-        <label class="dateTime" for="startField">${i18n().start_capitalized}</label>
+        <label class="dateTime" for="startField-year">${i18n().start_capitalized}</label>
 		${htmlForElements["startField"]} ${yearHint}
     </#if>
     <br/>
     <#if htmlForElements?keys?seq_contains("endField")>
-		<label class="dateTime" for="endField">${i18n().end_capitalized}</label>
+		<label class="dateTime" for="endField-year">${i18n().end_capitalized}</label>
 	 	${htmlForElements["endField"]} ${yearHint}
     </#if>
 	<#--End draw elements-->

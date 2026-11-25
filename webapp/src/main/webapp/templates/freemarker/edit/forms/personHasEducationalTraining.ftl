@@ -112,7 +112,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 
 
     <p class="inline">
-        <label for="orgType">${i18n().org_type_capitalized} ${requiredHint}</label>
+        <label for="typeSelector">${i18n().org_type_capitalized} ${requiredHint}</label>
         <#assign orgTypeOpts = editConfiguration.pageData.orgType />
         <select id="typeSelector" name="orgType" acGroupName="organization">
             <option value="" selected="selected">${i18n().select_one}</option>
@@ -142,9 +142,9 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <input class="acUriReceiver" type="hidden" id="orgUri" name="existingOrg" value="${existingOrgValue}" ${flagClearLabelForExisting}="true" />
     </div>
 
-    <label for="positionType">${i18n().educational_training_type} ${requiredHint}</label>
+    <label for="trainingType">${i18n().educational_training_type} ${requiredHint}</label>
     <#assign trainingTypeOpts = editConfiguration.pageData.trainingType />
-    <select name="trainingType" style="margin-top:-2px" >
+    <select id="trainingType" name="trainingType" style="margin-top:-2px" >
         <option value="" <#if trainingTypeValue == "">selected</#if>>${i18n().select_one}</option>
         <#list trainingTypeOpts?keys as key>
             <option value="${key}"  <#if trainingTypeValue == key>selected</#if>>${trainingTypeOpts[key]}</option>
@@ -191,12 +191,12 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
     <p></p>
     <#--Need to draw edit elements for dates here-->
      <#if htmlForElements?keys?seq_contains("startField")>
-			<label class="dateTime" for="startField">${i18n().start_capitalized}</label>
+			<label class="dateTime" for="startField-year">${i18n().start_capitalized}</label>
 			${htmlForElements["startField"]} ${yearHint}
      </#if>
      <p></p>
      <#if htmlForElements?keys?seq_contains("endField")>
-			<label class="dateTime" for="endField">${i18n().end_capitalized}</label>
+			<label class="dateTime" for="endField-year">${i18n().end_capitalized}</label>
 		 	${htmlForElements["endField"]} ${yearHint}
      </#if>
 

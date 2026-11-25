@@ -17,7 +17,7 @@
             <#if editConfiguration.propertyPublicDescription?has_content>
                 <p>${editConfiguration.propertyPublicDescription}</p>
              </#if>
-            <select id="objectVar" name="objectVar">
+            <select id="objectVar" name="objectVar" aria-label="${editConfiguration.formTitle?html}">
                 <#list rangeOptionKeys as key>
                  <option value="${key}" <#if editConfiguration.objectUri?has_content && editConfiguration.objectUri = key>selected</#if> role="option">${rangeOptions[key]}</option>
                 </#list>

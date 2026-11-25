@@ -110,7 +110,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <label for="person">${i18n().person_capitalized}: ${i18n().last_name}  ${requiredHint}<span style="padding-left:322px">${i18n().first_name}  ${requiredHint}</span></label>
             <input class="acSelector" size="50"  type="text" acGroupName="person" id="person" name="personLabel" value="${personLabelValue}" >
             <input type="text" size="50"  id="maskLabelBuilding" name="maskLabelBuilding" value="" style="display:none" >
-            <input  size="30"  type="text" id="firstName" name="firstName" value="${firstNameValue}" ><br />
+            <input  size="30"  type="text" id="firstName" name="firstName" aria-label="${i18n().first_name}" value="${firstNameValue}" ><br />
             <input type="hidden" id="lastName" name="lastName" value="">
             <input class="display" type="hidden" acGroupName="person" id="personDisplay" name="personLabelDisplay" value="${personLabelDisplayValue}" >
             <br>
@@ -132,7 +132,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <input class="acUriReceiver" type="hidden" id="personUri" name="existingPerson" value="${existingPersonValue}" ${flagClearLabelForExisting}="true" />
     </div>
     <p>
-        <label for="dept">${i18n().researcher_role} ${requiredHint}</label>
+        <label for="roleLabel">${i18n().researcher_role} ${requiredHint}</label>
         <input  size="50"  type="text" id="roleLabel" name="roleLabel" value="${roleLabelValue}" />
     </p>
 

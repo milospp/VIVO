@@ -110,9 +110,9 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 	        </#if>
 	    </select>
   	    <p>
-	        <label for="relatedIndLabel">${i18n().person_capitalized}: ${i18n().last_name} ${requiredHint}<span style="padding-left:322px">${i18n().first_name}  ${requiredHint}</span></label>
+	        <label for="person">${i18n().person_capitalized}: ${i18n().last_name} ${requiredHint}<span style="padding-left:322px">${i18n().first_name}  ${requiredHint}</span></label>
 	            <input class="acSelector" size="50"  type="text" id="person" name="personLabel" acGroupName="person" value="${personLabelValue}" >
-                <input  size="30"  type="text" id="firstName" name="firstName" value="${firstNameValue}" ><br />
+                <input  size="30"  type="text" id="firstName" name="firstName" aria-label="${i18n().first_name}" value="${firstNameValue}" ><br />
                 <input type="hidden" id="lastName" name="lastName" value="">
                 <input class="display" type="hidden" acGroupName="person" id="personDisplay" name="personLabelDisplay" value="${personLabelDisplayValue}" >
 	    </p>
@@ -131,12 +131,12 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
         <#--Need to draw edit elements for dates here-->
         <#assign htmlForElements = editConfiguration.pageData.htmlForElements />
         <#if htmlForElements?keys?seq_contains("startField")>
-  	        <label class="dateTime" for="startField">${i18n().start_capitalized}</label>
+  	        <label class="dateTime" for="startField-year">${i18n().start_capitalized}</label>
   			${htmlForElements["startField"]} ${yearHint}
         </#if>
         <br/>
         <#if htmlForElements?keys?seq_contains("endField")>
-  			<label class="dateTime" for="endField">${i18n().end_capitalized}</label>
+  			<label class="dateTime" for="endField-year">${i18n().end_capitalized}</label>
   		 	${htmlForElements["endField"]} ${yearHint}
         </#if>
     	<#--End draw elements-->

@@ -94,7 +94,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 
     <form id="personHasIssuedCredential" class="customForm noIE67" action="${submitUrl}">
     <p class="inline">
-        <label for="credentialType">${i18n().type_of_credential} ${requiredHint}</label>
+        <label for="typeSelector">${i18n().type_of_credential} ${requiredHint}</label>
         <#assign credentialTypeOpts = editConfiguration.pageData.credentialType />
 
 
@@ -124,7 +124,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 
     </p>
     <p>
-        <label for="relatedIndLabel">${i18n().credential_name} ${requiredHint}</label>
+        <label for="credential">${i18n().credential_name} ${requiredHint}</label>
             <input class="acSelector" size="50"  type="text" id="credential" acGroupName="credential" name="credentialLabel" value="${credentialLabelValue}">
             <input class="display" type="hidden" id="credentialDisplay" acGroupName="credential" name="credentialLabelDisplay" value="${credentialLabelDisplayValue}">
     </p>
@@ -154,12 +154,12 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
     </p>
     <#--Need to draw edit elements for dates here-->
     <#if htmlForElements?keys?seq_contains("startField")>
-        <label class="dateTime" for="startField">${i18n().start_capitalized}</label>
+        <label class="dateTime" for="startField-year">${i18n().start_capitalized}</label>
 		${htmlForElements["startField"]} ${yearHint}
     </#if>
     <br/>
     <#if htmlForElements?keys?seq_contains("endField")>
-		<label class="dateTime" for="endField">${i18n().end_capitalized}</label>
+		<label class="dateTime" for="endField-year">${i18n().end_capitalized}</label>
 	 	${htmlForElements["endField"]} ${yearHint}
     </#if>
 	<#--End draw elements-->

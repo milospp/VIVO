@@ -57,7 +57,7 @@
     <form id="personHasAdditionalEmail" class="customForm noIE67" action="${submitUrl}">
 
         <p>
-            <label for="additionalEmail">${i18n().email_address} ${requiredHint}</label>
+            <label for="emailAddress">${i18n().email_address} ${requiredHint}</label>
             <input  size="35"  type="text" id="emailAddress" name="emailAddress" value="${emailAddressValue!?html}" />
         </p>
 

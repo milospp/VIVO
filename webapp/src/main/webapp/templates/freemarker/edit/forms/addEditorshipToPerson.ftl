@@ -81,7 +81,7 @@ Set this flag on the input acUriReceiver where you would like this behavior to o
 
 
     <p class="inline">
-        <label for="orgType">${i18n().document_type_capitalized} ${requiredHint}</label>
+        <label for="typeSelector">${i18n().document_type_capitalized} ${requiredHint}</label>
         <#assign docTypeOpts = editConfiguration.pageData.documentType />
         <select id="typeSelector" name="documentType" acGroupName="document">
             <#list docTypeOpts?keys as key>
